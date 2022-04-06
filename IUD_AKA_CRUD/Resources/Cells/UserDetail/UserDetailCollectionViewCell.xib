@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCellID" id="gTV-IL-0wX" customClass="UserDetailCollectionViewCell" customModule="IUD_AKA_CRUD" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KED-JZ-a11">
+                        <rect key="frame" x="16" y="16" width="289" height="30"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsL-RQ-ur7">
+                        <rect key="frame" x="16" y="62" width="289" height="17"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="KED-JZ-a11" secondAttribute="trailing" constant="16" id="3vK-ow-JAK"/>
+                <constraint firstItem="EsL-RQ-ur7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="CCq-jU-7aM"/>
+                <constraint firstItem="KED-JZ-a11" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="NEW-WP-O8i"/>
+                <constraint firstAttribute="trailing" secondItem="EsL-RQ-ur7" secondAttribute="trailing" constant="16" id="V8q-rv-CkP"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EsL-RQ-ur7" secondAttribute="bottom" id="Z8e-eq-yEd"/>
+                <constraint firstItem="EsL-RQ-ur7" firstAttribute="top" secondItem="KED-JZ-a11" secondAttribute="bottom" constant="16" id="rJ4-88-Nkf"/>
+                <constraint firstItem="KED-JZ-a11" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="v28-iM-Q1W"/>
+            </constraints>
+            <size key="customSize" width="321" height="105"/>
+            <connections>
+                <outlet property="lbBirthdate" destination="EsL-RQ-ur7" id="rkz-JO-AkH"/>
+                <outlet property="lbName" destination="KED-JZ-a11" id="gB9-Vb-8qI"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="66.629464285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  IUD_AKA_CRUD
+
+  Created by Francisco Javier Sarasúa Galán on 6/4/22.
+  
+*/
+
+
+"title.error" = "Error";
+"title.serverError" = "Error de servidor";
+
+"title.confirm" = "Aceptar";
+"title.attention" = "¡Atención!";
+
+"message.notValidURL" = "La URL es inválida.";
+"message.dataParsing" = "La transformación de los datos ha fallado.";
+"message.dataError" = "No hay datos recibidos.";
+"message.noDataContent" = "No hay contenido en los datos recibidos.";
+"message.responseError" = "No hay respuesta de servidor.";
+"message.statusCodeError" = "El código de respuesta del servidor es inválido.";
+"message.unknown" = "Ha ocurrido un error desconocido.";
+
+"message.remove" = " ha sido eliminado.";
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="IUD_AKA_CRUD" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="cL6-5H-U1x" id="LHa-FV-NTF"/>
+                <outlet property="btnMode" destination="CUW-w5-gbe" id="mKP-Zs-Fay"/>
+                <outlet property="collectionView" destination="4ox-NT-0cE" id="Aqp-pi-yYd"/>
+                <outlet property="lbTitle" destination="m9w-e3-KC4" id="0bM-8V-4If"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IUD AKA CRUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9w-e3-KC4">
+                    <rect key="frame" x="16" y="76" width="398" height="37"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-w5-gbe">
+                    <rect key="frame" x="355" y="79" width="43" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system"/>
+                    <connections>
+                        <action selector="tapBtnMode:" destination="-1" eventType="touchUpInside" id="OUT-Ny-R7i"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODi-ON-nUw">
+                    <rect key="frame" x="8" y="126" width="398" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fwT-4C-3ix"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4ox-NT-0cE">
+                    <rect key="frame" x="0.0" y="129" width="414" height="767"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="8" minimumInteritemSpacing="8" id="II3-DT-WBd">
+                        <size key="itemSize" width="150" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wsO-O4-Kyp"/>
+                        <outlet property="delegate" destination="-1" id="K2T-aP-42U"/>
+                    </connections>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cL6-5H-U1x">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.93631628787878785" green="0.7962078938742897" blue="0.60016343958732454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="cL6-5H-U1x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0fU-PD-9bP"/>
+                <constraint firstItem="4ox-NT-0cE" firstAttribute="top" secondItem="ODi-ON-nUw" secondAttribute="bottom" constant="2" id="7Kv-tZ-20e"/>
+                <constraint firstItem="CUW-w5-gbe" firstAttribute="centerY" secondItem="m9w-e3-KC4" secondAttribute="centerY" id="AZF-4U-wng"/>
+                <constraint firstItem="4ox-NT-0cE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Faq-hU-0j2"/>
+                <constraint firstItem="ODi-ON-nUw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="GcV-LY-S3L"/>
+                <constraint firstAttribute="bottom" secondItem="cL6-5H-U1x" secondAttribute="bottom" id="OQ8-va-3Mn"/>
+                <constraint firstItem="cL6-5H-U1x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T0U-WT-7yf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cL6-5H-U1x" secondAttribute="trailing" id="TEZ-s9-ji0"/>
+                <constraint firstItem="m9w-e3-KC4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="TOD-lI-PwM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4ox-NT-0cE" secondAttribute="trailing" id="Us4-UO-Xxi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ODi-ON-nUw" secondAttribute="trailing" constant="8" id="iQV-sm-Kjc"/>
+                <constraint firstItem="m9w-e3-KC4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jGQ-M9-tzE"/>
+                <constraint firstItem="4ox-NT-0cE" firstAttribute="top" secondItem="m9w-e3-KC4" secondAttribute="bottom" constant="16" id="jr1-9M-OYz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m9w-e3-KC4" secondAttribute="trailing" id="pYJ-r3-8lr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CUW-w5-gbe" secondAttribute="trailing" constant="16" id="s7U-0i-ca2"/>
+                <constraint firstAttribute="bottom" secondItem="4ox-NT-0cE" secondAttribute="bottom" id="ySc-PU-q43"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
